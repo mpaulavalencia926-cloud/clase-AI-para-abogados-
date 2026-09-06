@@ -2,9 +2,9 @@
 
 **Pontificia Universidad Javeriana · 2026-II · Docente: Pedro Ardila**
 
-> **Estudiante:** [escribe aquí tu nombre completo]
-> **Nombre del proyecto:** [escribe aquí el nombre de tu herramienta]
-> **Fecha de inicio:** [AAAA-MM-DD]
+> **Estudiante:** [maria paula rodriguez valencia)
+> **Nombre del proyecto:** tutelaapp
+> **Fecha de inicio:** [06/09/2026]
 
 ---
 
@@ -22,25 +22,29 @@ Bienvenido/a a tu repositorio de proyecto. **Este archivo es tu tablero de mando
 
 ### 1.1 El problema jurídico
 ¿Qué problema **real del derecho colombiano** resuelve tu herramienta? ¿Quién lo sufre hoy y cómo lo resuelve sin tu herramienta?
+En Colombia, algunas personas enfrentan barreras para acceder oportunamente a medicamentos que necesitan, por ejemplo, debido a la negación, demora o falta de entrega por parte de una EPS u otra entidad responsable. Estas situaciones pueden comprometer derechos fundamentales como la salud y, dependiendo de las circunstancias del caso, la vida y la dignidad humana. Actualmente, una persona que enfrenta este problema debe identificar por sí misma si la situación puede tener relevancia constitucional, buscar las normas y sentencias aplicables y entender cómo presentar una acción de tutela. Esto puede ser especialmente difícil para una persona que no tiene conocimientos jurídicos. Mi herramienta busca orientar al usuario sobre los elementos jurídicos relevantes de un caso ficticio de barrera de acceso a medicamentos, utilizando únicamente un corpus jurídico previamente seleccionado. La herramienta no pretende decidir si una tutela será concedida, sino facilitar la identificación y comprensión de los fundamentos jurídicos que podrían ser relevantes.
 
 ### 1.2 Usuarios
 ¿Quién va a usarla? Describe a tu usuario ideal en una frase (ej. *"un arrendatario bogotano que le subieron el canon de arrendamiento más del límite legal"*). Recuerda que al final necesitas **al menos un usuario real** que la pruebe.
+l usuario ideal es una persona en Colombia que enfrenta una demora, negación o barrera para recibir un medicamento que le ha sido formulado y quiere comprender qué relevancia jurídica puede tener su situación. También podría ser utilizada con fines académicos por estudiantes que quieran estudiar la protección constitucional del derecho a la salud. El usuario ingresará una descripción ficticia de su situación y la herramienta formulará una orientación jurídica basada en las fuentes incorporadas. Para proteger los datos personales, durante las pruebas no se utilizarán nombres, números de identificación, historias clínicas ni otros datos personales reales. Al finalizar el proyecto, al menos una persona externa al curso probará la herramienta utilizando un caso ficticio.
 
 ### 1.3 Qué hace y qué NO hace (alcance)
 | ✅ Sí hace | ❌ No hace |
 | --- | --- |
-| [funcionalidad 1] | [fuera de alcance 1] |
-| [funcionalidad 2] | [fuera de alcance 2] |
+| [Recibe una descripción de una situación ficticia relacionada con una barrera de acceso a medicamentos.] | [	No reemplaza a un abogado.] |
+| [dentifica los posibles derechos fundamentales involucrados según el corpus jurídico.] | [	No diagnostica enfermedades ni recomienda medicamentos o tratamientos.] |
 
 *Consejo de abogado: un alcance pequeño y perfecto vale más que uno grande y roto.*
 
 ### 1.4 Marco jurídico y fuentes
 ¿Qué normas alimentan tu herramienta? Lista tu corpus normativo (leyes, decretos, sentencias — debe ser **pequeño y público**):
-- [ ] Norma/sentencia 1: [nombre + enlace]
-- [ ] Norma/sentencia 2: [nombre + enlace]
+- [ ] Norma/sentencia 1: [ onstitución Política de Colombia de 1991, especialmente los artículos 48 y 49, relacionados con la seguridad social y el derecho a la salud. https://www.secretariasenado.gov.co/senado/basedoc/constitucion_politica_1991.html]
+- [ ] Norma/sentencia 2: [Ley Estatutaria 1751 de 2015, por medio de la cual se regula el derecho fundamental a la salud. + https://www.secretariasenado.gov.co/senado/basedoc/ley_1751_2015.html]
 
 ### 1.5 Nombre y lema
-Un nombre corto para tu herramienta y una frase que explique qué hace (la usarás en la demo del día de presentaciones).
+Nombre: tutelaapp
+
+Lema: “Comprende tus derechos frente a las barreras de acceso a medicamentos.”).
 
 ---
 
