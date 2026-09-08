@@ -1,201 +1,272 @@
-# ⚖️🤖 Proyecto Final — Derecho e Inteligencia Artificial
+# ⚖️🤖 tutelaapp — Derecho e Inteligencia Artificial
 
-**Pontificia Universidad Javeriana · 2026-II · Docente: Pedro Ardila**
-
-> **Estudiante:** [maria paula rodriguez valencia)
-> **Nombre del proyecto:** tutelaapp
-> **Fecha de inicio:** [06/09/2026]
-
----
-
-Bienvenido/a a tu repositorio de proyecto. **Este archivo es tu tablero de mando**: aquí describes tu proyecto, planificas su desarrollo y dejas evidencia del avance. Lo vas a completar por partes, siguiendo el curso.
-
-📌 Si ya habías escrito una descripción de tu proyecto cuando creaste el repo, la encuentras intacta en `README-ORIGINAL.md`. Úsala como punto de partida para la Parte 1 — no empieces de cero.
-
-**No necesitas saber programar.** Todo el código lo construirás con asistencia de IA (*vibe coding*). Tu valor como estudiante de derecho está en el problema que eliges, las fuentes que alimentas, las instrucciones que diseñas y el juicio crítico con el que evalúas el resultado.
+**Pontificia Universidad Javeriana · 2026-II**  
+**Estudiante:** María Paula Rodríguez Valencia  
+**Docente:** Pedro Ardila  
+**Nombre del proyecto:** tutelaapp  
+**Fecha de inicio:** 06/09/2026
 
 ---
 
 ## 📋 Parte 1 — Descripción del proyecto
 
-> Completa cada sección con 3–10 frases. Sé concreto/a: esta descripción es la que tu IA usará como contexto y la que el docente usará para realimentarte.
-
 ### 1.1 El problema jurídico
-¿Qué problema **real del derecho colombiano** resuelve tu herramienta? ¿Quién lo sufre hoy y cómo lo resuelve sin tu herramienta?
+
 En Colombia, algunas personas enfrentan barreras para acceder oportunamente a medicamentos que necesitan, por ejemplo, debido a la negación, demora o falta de entrega por parte de una EPS u otra entidad responsable. Estas situaciones pueden comprometer derechos fundamentales como la salud y, dependiendo de las circunstancias del caso, la vida y la dignidad humana. Actualmente, una persona que enfrenta este problema debe identificar por sí misma si la situación puede tener relevancia constitucional, buscar las normas y sentencias aplicables y entender cómo presentar una acción de tutela. Esto puede ser especialmente difícil para una persona que no tiene conocimientos jurídicos. Mi herramienta busca orientar al usuario sobre los elementos jurídicos relevantes de un caso ficticio de barrera de acceso a medicamentos, utilizando únicamente un corpus jurídico previamente seleccionado. La herramienta no pretende decidir si una tutela será concedida, sino facilitar la identificación y comprensión de los fundamentos jurídicos que podrían ser relevantes.
 
 ### 1.2 Usuarios
-¿Quién va a usarla? Describe a tu usuario ideal en una frase (ej. *"un arrendatario bogotano que le subieron el canon de arrendamiento más del límite legal"*). Recuerda que al final necesitas **al menos un usuario real** que la pruebe.
-l usuario ideal es una persona en Colombia que enfrenta una demora, negación o barrera para recibir un medicamento que le ha sido formulado y quiere comprender qué relevancia jurídica puede tener su situación. También podría ser utilizada con fines académicos por estudiantes que quieran estudiar la protección constitucional del derecho a la salud. El usuario ingresará una descripción ficticia de su situación y la herramienta formulará una orientación jurídica basada en las fuentes incorporadas. Para proteger los datos personales, durante las pruebas no se utilizarán nombres, números de identificación, historias clínicas ni otros datos personales reales. Al finalizar el proyecto, al menos una persona externa al curso probará la herramienta utilizando un caso ficticio.
 
-### 1.3 Qué hace y qué NO hace (alcance)
-| ✅ Sí hace | ❌ No hace |
-| --- | --- |
-| [Recibe una descripción de una situación ficticia relacionada con una barrera de acceso a medicamentos.] | [	No reemplaza a un abogado.] |
-| [dentifica los posibles derechos fundamentales involucrados según el corpus jurídico.] | [	No diagnostica enfermedades ni recomienda medicamentos o tratamientos.] |
+El usuario ideal es una persona en Colombia que enfrenta una demora, negación o barrera para recibir un medicamento que le ha sido formulado y quiere comprender qué relevancia jurídica puede tener su situación. También podría ser utilizada con fines académicos por estudiantes que quieran estudiar la protección constitucional del derecho a la salud. El usuario ingresará una descripción ficticia de su situación y la herramienta formulará una orientación jurídica basada en las fuentes incorporadas. Para proteger los datos personales, durante las pruebas no se utilizarán nombres, números de identificación, historias clínicas ni otros datos personales reales. Al finalizar el proyecto, al menos una persona externa al curso probará la herramienta utilizando un caso ficticio.
 
-*Consejo de abogado: un alcance pequeño y perfecto vale más que uno grande y roto.*
+### 1.3 Qué hace y qué NO hace
+
+| **✅ Sí hace** | **❌ No hace** |
+|---|---|
+| Recibe una descripción de una situación ficticia relacionada con una barrera de acceso a medicamentos. | No reemplaza a un abogado. |
+| Identifica los posibles derechos fundamentales involucrados según el corpus jurídico. | No diagnostica enfermedades ni recomienda medicamentos o tratamientos. |
+| Explica qué normas y sentencias del corpus podrían ser relevantes. | No garantiza que una tutela sea concedida. |
+| Orienta sobre los elementos jurídicos que podrían analizarse en una acción de tutela. | No presenta tutelas automáticamente ni actúa como representante del usuario. |
+| Cita las fuentes jurídicas utilizadas y reconoce cuando no tiene información suficiente. | No inventa normas, sentencias ni hechos del caso. |
 
 ### 1.4 Marco jurídico y fuentes
-¿Qué normas alimentan tu herramienta? Lista tu corpus normativo (leyes, decretos, sentencias — debe ser **pequeño y público**):
-- [ ] Norma/sentencia 1: [ onstitución Política de Colombia de 1991, especialmente los artículos 48 y 49, relacionados con la seguridad social y el derecho a la salud. https://www.secretariasenado.gov.co/senado/basedoc/constitucion_politica_1991.html]
-- [ ] Norma/sentencia 2: [Ley Estatutaria 1751 de 2015, por medio de la cual se regula el derecho fundamental a la salud. + https://www.secretariasenado.gov.co/senado/basedoc/ley_1751_2015.html]
+
+El corpus inicial será pequeño y estará compuesto por fuentes jurídicas públicas. La herramienta utilizará estas fuentes para identificar los posibles derechos involucrados y explicar los fundamentos jurídicos de manera comprensible.
+
+- **Constitución Política de Colombia de 1991**, especialmente los artículos 48 y 49, relacionados con la seguridad social y el derecho a la salud.  
+  [Consultar Constitución Política](https://www.secretariasenado.gov.co/senado/basedoc/constitucion_politica_1991.html)
+
+- **Ley Estatutaria 1751 de 2015**, por medio de la cual se regula el derecho fundamental a la salud.  
+  [Consultar Ley 1751 de 2015](https://www.secretariasenado.gov.co/senado/basedoc/ley_1751_2015.html)
+
+- **Jurisprudencia:** Se incorporarán sentencias de la Corte Constitucional relacionadas con el acceso a medicamentos y la protección del derecho a la salud, una vez sean seleccionadas y verificadas para el corpus del proyecto.
 
 ### 1.5 Nombre y lema
-Nombre: tutelaapp
 
-Lema: “Comprende tus derechos frente a las barreras de acceso a medicamentos.”).
+**Nombre:** tutelaapp
+
+**Lema:** “Comprende tus derechos frente a las barreras de acceso a medicamentos.”
 
 ---
 
 ## 🗺️ Parte 2 — Plan de desarrollo
 
-Marca cada hito cuando lo termines. Los hitos siguen las sesiones del curso.
+### 2.1 Hitos del proyecto
 
-- [ ] **M0 — Descripción y plan** *(con Sesión 1)*: Partes 1 y 2 de este README completas.
-- [ ] **M1 — Asistente con instrucciones v1** *(Sesión 1–2)*: redactaste las instrucciones (prompt de sistema) de tu asistente y funcionan en una herramienta gratuita de chat.
-- [ ] **M2 — Casos de prueba documentados** *(Sesión 2)*: tienes al menos 5 casos de prueba (donde antes fallaba) con resultados guardados en `docs/casos-de-prueba.md`.
-- [ ] **M3 — Corpus conectado (RAG)** *(Sesión 3)*: tu asistente **cita la fuente** normativa que usa y no inventa. Corpus cargado en `corpus/`.
-- [ ] **M4 — Interfaz web desplegada** *(Sesión 4)*: tu herramienta tiene **URL pública** (ver Parte 4) y tu primer usuario real la probó con evidencia.
-- [ ] **M5 — Análisis crítico y demo** *(Sesión 5)*: Parte 7 completada + presentación de 5 minutos.
+| Hito | Qué debo lograr | Estado |
+|---|---|---|
+| **M0 — Descripción y plan** | Completar las Partes 1 y 2 del README. | 🟡 En desarrollo |
+| **M1 — Asistente con instrucciones v1** | Crear las instrucciones del asistente y probarlas en una herramienta gratuita de chat. | ⬜ Pendiente |
+| **M2 — Casos de prueba documentados** | Elaborar al menos 5 casos de prueba y guardar sus resultados en `docs/casos-de-prueba.md`. | ⬜ Pendiente |
+| **M3 — Corpus conectado (RAG)** | Conectar el corpus jurídico para que el asistente cite las fuentes utilizadas y no invente. | ⬜ Pendiente |
+| **M4 — Interfaz web desplegada** | Crear una interfaz web, obtener una URL pública y realizar una prueba con un usuario externo. | ⬜ Pendiente |
+| **M5 — Análisis crítico y demo** | Completar la Parte 7 y preparar la presentación de 5 minutos. | ⬜ Pendiente |
 
-### Bitácora de avance semanal
-| Semana | Qué hice | Enlace/captura | Dudas para la clase |
-| --- | --- | --- | --- |
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
+### 2.2 Bitácora de avance semanal
+
+| Semana | Qué hice | Enlace / captura | Dudas para la clase |
+|---|---|---|---|
+| **1** | Delimité el problema jurídico, los usuarios, el alcance y las fuentes de tutelaapp. | Enlace al README | ¿El alcance es suficientemente pequeño? |
+| **2** | | | |
+| **3** | | | |
+| **4** | | | |
+| **5** | | | |
 
 ---
 
 ## 🛠️ Parte 3 — Stack técnico recomendado
 
-Todo es **gratuito y no exige tarjeta de crédito**. Tu proyecto final debería verse así:
+### 3.1 ¿Cómo funcionará tutelaapp?
 
-```
-[Usuario] → [Interfaz web] → [Orquestación (LangChain)] → [Modelo (OpenRouter)]
-                                   ↕
-                          [Tu corpus normativo (RAG)]
-```
+La herramienta tendrá una interfaz web donde el usuario podrá escribir una situación ficticia relacionada con una barrera de acceso a medicamentos. Esa consulta será procesada por un sistema que buscará información en un corpus jurídico previamente seleccionado y utilizará un modelo de inteligencia artificial para generar una orientación basada en las fuentes encontradas.
 
-| Pieza | Herramienta recomendada | Para qué sirve (en cristiano) |
-| --- | --- | --- |
-| **Interfaz web** | **Streamlit o v0.dev** (genera una app Next.js) o **Streamlit** (si tu agente trabaja en Python) | Lo que el usuario ve: cajas de texto, botones. Se la describes a la IA y ella la construye. |
-| **Orquestación** | **LangChain / LangGraph** | El "cerebro intermedio": toma la pregunta del usuario, busca en tus normas, arma el prompt y llama al modelo. |
-| **Modelo (LLM)** | **OpenRouter** — modelos con etiqueta `:free` | El "cerebro" que redacta. OpenRouter te da acceso a modelos gratuitos con una sola cuenta y una sola API key. |
-| **Memoria de fuentes (RAG)** | LangChain + almacén de vectores (**Chroma** o **FAISS** en local; **Supabase** si necesitas base de datos en la nube) | La técnica para que el modelo responda **con tus normas** y no con lo que "recuerda" (que puede ser una alucinación jurídica). |
-| **Trazabilidad** *(opcional)* | **LangSmith** (plan gratuito) | Ver qué le pasó a cada respuesta por dentro. Útil para depurar. |
+La arquitectura propuesta es:
 
-> 🔑 **Regla de oro:** tu `OPENROUTER_API_KEY` va en una **variable de entorno**, jamás pegada en el código ni en el chat. Si una clave se filtra en GitHub, revócala de inmediato en openrouter.ai → Keys.
+**Usuario → Interfaz web → LangChain → OpenRouter → Corpus jurídico (RAG) → Respuesta con fuentes**
 
-Pídele a tu agente de IA que te explique esta arquitectura con tu proyecto concreto antes de escribir una línea de código.
+### 3.2 Herramientas que utilizaré
+
+| Pieza | Herramienta | ¿Para qué sirve? |
+|---|---|---|
+| **Interfaz web** | Streamlit o una interfaz generada con IA | Es la página que verá el usuario. |
+| **Orquestación** | LangChain | Organiza la consulta, la búsqueda en el corpus y la respuesta. |
+| **Modelo de IA** | OpenRouter | Permite utilizar un modelo de lenguaje para redactar la orientación. |
+| **Memoria de fuentes (RAG)** | LangChain + Chroma o FAISS | Permite que la respuesta se base en las normas incorporadas. |
+| **Repositorio** | GitHub | Guarda el código, los documentos y el historial de avances. |
+| **Despliegue** | Vercel o Streamlit Community Cloud | Permite publicar la herramienta para que otras personas puedan abrirla. |
+
+### 3.3 ¿Por qué elegí estas herramientas?
+
+Elegí estas herramientas porque el proyecto busca demostrar que una estudiante de Derecho puede construir una herramienta sencilla con asistencia de IA, sin necesidad de programar todo desde cero. La interfaz permitirá que el usuario interactúe con el sistema, mientras que LangChain organizará el proceso de búsqueda y respuesta. El uso de RAG será importante porque la herramienta debe responder con base en un corpus jurídico previamente seleccionado y no únicamente con lo que el modelo recuerde. GitHub permitirá conservar el historial de cambios y mostrar el proceso de desarrollo.
 
 ---
 
 ## 🚀 Parte 4 — Ruta de despliegue
 
-Tu meta: **una URL pública** que cualquiera pueda abrir. Elige una ruta:
+### 4.1 Meta del proyecto
 
-### Opción A — Vercel ⭐ (recomendada, la del curso)
-1. Sube tu código a este repo de GitHub (ya lo tienes ✅).
-2. Crea cuenta gratis en [vercel.com](https://vercel.com) con tu GitHub.
-3. "Add New Project" → importa tu repo → Deploy.
-4. Cada `git push` re-despliega solo.
-- ✅ Ideal para Next.js/Streamlit (Streamlit via [streamlit.io/community-cloud](https://streamlit.io)) · gratis · sin servidor.
+La meta es que tutelaapp tenga una **URL pública** que pueda abrir otra persona desde su navegador. La herramienta deberá permitir escribir una consulta ficticia, recibir una orientación jurídica y mostrar de manera visible la advertencia de que se trata de un ejercicio académico.
 
-### Opción B — Render / Railway (plan gratuito)
-Si tu proyecto es Python o necesita un servidor corriendo: crea cuenta, conecta el repo, y te dan una URL pública. Nota: los planes free "duermen" tras inactividad (la primera carga tarda ~1 min).
+### 4.2 Ruta elegida
 
-### Opción C — Servidor propio o Docker *(solo si A y B no te dan lo que necesitas)*
-Si necesitas algo que Vercel no ofrece (ej. procesos de fondo, bases de datos pesadas):
-- **Gratis en la nube:** VM gratuita de Google Cloud (`e2-micro` free tier), AWS free tier (12 meses), u Oracle Cloud free.
-- **Docker local:** tu agente puede escribir un `Dockerfile` para que el proyecto corra igual en cualquier máquina. Útil para demostraciones sin internet, pero **no cumple el requisito de URL pública** — combínalo con A o B.
+**Ruta principal: GitHub + Vercel**, si la interfaz se construye con Next.js.
 
-### Checklist de despliegue ✅
-- [ ] URL pública funciona en el navegador de otra persona (pídele a alguien que la abra)
-- [ ] La advertencia de la Parte 7 es **visible** en la interfaz
-- [ ] No hay API keys ni secretos en el código (verifica con una búsqueda de `sk-` en el repo)
-- [ ] Anota la URL aquí: **`[tu-url-publica]`**
+El proceso será:
 
-> El dominio propio (.com, .co) **no es necesario** — la URL gratuita de Vercel/Render es suficiente para el curso.
+1. Crear y organizar los archivos del proyecto.
+2. Subir el código al repositorio de GitHub.
+3. Crear una cuenta gratuita en Vercel.
+4. Importar el repositorio.
+5. Configurar las variables de entorno necesarias.
+6. Desplegar la aplicación.
+7. Probar la URL desde otro navegador o dispositivo.
+8. Guardar evidencia del funcionamiento.
+
+### 4.3 Checklist de despliegue
+
+- [ ] La interfaz web funciona.
+- [ ] La URL pública abre correctamente.
+- [ ] La advertencia legal es visible.
+- [ ] No hay claves API ni secretos en el código.
+- [ ] La herramienta fue probada por otra persona.
+- [ ] Se guardó evidencia de la prueba.
+- [ ] Se anotó la URL pública en este README.
+
+**URL pública:** `[Se completará cuando la aplicación esté desplegada]`
 
 ---
 
-## 🧠 Parte 5 — Guía de prompting para *vibe coding*
+## 🧠 Parte 5 — Guía de prompting para vibe coding
 
-Tu competencia más transferible a la práctica profesional: **instruir bien a la IA**. Reglas:
+### 5.1 ¿Qué es el prompting en mi proyecto?
 
-1. **Un hito a la vez.** No le pidas "hazme todo el proyecto". Pide: "vamos por M1".
-2. **Da contexto jurídico, recibe código.** Pega tu Parte 1 y dile: "eres mi ingeniero, yo soy el abogado del proyecto".
-3. **Pide explicaciones.** "Explícame como a alguien que no sabe programar qué acabas de hacer."
-4. **Commits frecuentes.** Cada vez que algo funcione: `git add . && git commit -m "M1: instrucciones del asistente"` y push. Si rompes algo, siempre puedes volver atrás.
-5. **Nunca pegues datos personales reales** de usuarios en el chat ni en el código (Ley 1581).
-6. **Verifica como abogado.** Toda respuesta legal que dé la herramienta, contrástala con la norma. Tú respondes por lo que publicas.
+El prompting es la forma de darle instrucciones a la inteligencia artificial para que construya y responda de acuerdo con el objetivo jurídico de tutelaapp. En este proyecto, mi función como estudiante de Derecho no es solamente pedirle a la IA que programe, sino definir el problema, seleccionar las fuentes, establecer los límites y verificar que las respuestas sean jurídicamente responsables.
 
-### Prompts de arranque por hito
-<details>
-<summary><b>M0 — delimitar el proyecto</b></summary>
+### 5.2 Reglas que seguiré
 
-> "Soy estudiante de derecho primer semestre. Mi idea de proyecto es [idea]. Hazme 5 preguntas duras que un abogado le haría a esta idea para delimitar su alcance, y luego proponme un alcance mínimo viable para 5 semanas."
-</details>
+1. Trabajaré **un hito a la vez**.
+2. Explicaré a la IA el contexto jurídico antes de pedirle código.
+3. Pediré que me explique cada paso en un lenguaje que pueda entender.
+4. Guardaré los avances mediante commits en GitHub.
+5. No utilizaré datos personales reales en las pruebas.
+6. Verificaré las respuestas jurídicas con las fuentes del corpus.
+7. Si la IA no tiene una fuente suficiente, deberá reconocerlo.
+8. No permitiré que la herramienta invente normas o sentencias.
 
-<details>
-<summary><b>M1 — instrucciones del asistente</b></summary>
+### 5.3 Prompt de arranque para M1
 
-> "Escribe el prompt de sistema de mi asistente jurídico. Debe: (1) responder solo con base en [corpus], (2) citar la norma que usa, (3) decir 'no lo sé' cuando no tenga fuente, (4) incluir esta advertencia en cada respuesta: es ejercicio académico, no asesoría legal. Proponme 3 versiones y explícame las diferencias."
-</details>
+> Soy estudiante de Derecho de primer semestre y estoy construyendo un proyecto académico llamado tutelaapp. Mi herramienta busca orientar sobre los posibles fundamentos jurídicos de casos ficticios de barreras de acceso a medicamentos en Colombia.
+>
+> Quiero que me ayudes a crear las instrucciones de mi asistente jurídico. El asistente debe:
+>
+> 1. Responder únicamente con base en el corpus jurídico que yo le proporcione.
+> 2. Identificar los posibles derechos fundamentales involucrados.
+> 3. Citar la norma o sentencia que utiliza.
+> 4. Decir “no tengo información suficiente en el corpus” cuando no encuentre una fuente.
+> 5. No inventar normas, sentencias ni hechos.
+> 6. No garantizar que una tutela será concedida.
+> 7. Incluir esta advertencia en cada respuesta: “Esta herramienta es un ejercicio académico que no constituye asesoría legal ni sustituye la consulta con un abogado.”
+> 8. No diagnosticar enfermedades ni recomendar medicamentos o tratamientos.
+>
+> Explícame cómo construir este prompt paso a paso y dame una primera versión que pueda probar en una herramienta gratuita de chat.
 
-<details>
-<summary><b>M3 — RAG con mis normas</b></summary>
+### 5.4 Prompt de arranque para M3
 
-> "Tengo [ley X] en archivos de texto en /corpus. Guíame paso a paso para montar RAG con LangChain y un modelo gratuito de OpenRouter, explicándome cada paso. Al final, el asistente debe citar artículo y norma en cada respuesta."
-</details>
+> Tengo un corpus jurídico sobre el derecho a la salud y las barreras de acceso a medicamentos. Quiero conectar esas fuentes a mi asistente mediante RAG. Guíame paso a paso, explicándome como a alguien que no sabe programar. Al final, el asistente debe responder únicamente con base en las fuentes recuperadas y citar el artículo o sentencia utilizado.
 
-<details>
-<summary><b>M4 — interfaz y despliegue</b></summary>
+### 5.5 Prompt de arranque para M4
 
-> "Crea una interfaz web simple para mi asistente: un recuadro para escribir la consulta, el espacio de respuesta, la advertencia legal visible arriba, y el logo/nombre. Luego guíame para desplegarla gratis en Vercel con mi repo de GitHub. No sé programar: dime exactamente qué archivo tocar y qué copiar."
-</details>
+> Crea una interfaz web sencilla para tutelaapp. Debe tener un recuadro para escribir una consulta ficticia, un espacio para mostrar la respuesta, el nombre de la herramienta y una advertencia legal visible. Explícame qué archivo debo tocar y qué debo copiar. Después guíame para desplegarla gratis con mi repositorio de GitHub. No sé programar: dime exactamente qué archivo tocar y qué copiar.
 
 ---
 
 ## ⚖️ Parte 6 — Ética, datos y responsabilidad
 
-Estas salvaguardas son **obligatorias** y hacen parte de la evaluación:
+### 6.1 Advertencia visible obligatoria
 
-- **Advertencia visible obligatoria.** Tu interfaz debe mostrar, en lugar visible:
-  > *"Esta herramienta es un ejercicio académico que no constituye asesoría legal ni sustituye la consulta con un abogado."*
-  - [ ] Implementada y visible en la interfaz
-- **Protección de datos (Ley 1581 de 2012).** Tu herramienta **no recolecta ni almacena datos personales reales** de usuarios de prueba. Los usuarios de prueba usan situaciones ficticias o datos inventados.
-  - [ ] Verificado: no guardo datos personales
-- **Corpus público.** Solo fuentes públicas: leyes, decretos, jurisprudencia publicada.
-  - [ ] Verificado
-- **Anti-alucinaciones.** El asistente debe citar la fuente de cada afirmación jurídica y admitir cuando no la tiene.
-  - [ ] Casos de prueba donde la herramienta se niega a inventar
+La interfaz de tutelaapp mostrará de manera visible:
+
+> **“Esta herramienta es un ejercicio académico que no constituye asesoría legal ni sustituye la consulta con un abogado.”**
+
+### 6.2 Protección de datos
+
+Durante las pruebas no se utilizarán nombres, números de identificación, historias clínicas ni otros datos personales reales. Los usuarios de prueba utilizarán situaciones ficticias o datos inventados. La herramienta se diseñará para no recolectar ni almacenar datos personales reales de los usuarios de prueba.
+
+### 6.3 Corpus público
+
+El corpus estará compuesto únicamente por fuentes jurídicas públicas, como leyes, decretos y jurisprudencia publicada. No se utilizarán documentos privados ni información personal de usuarios.
+
+### 6.4 Anti-alucinaciones
+
+El asistente deberá citar la fuente jurídica de cada afirmación relevante. Cuando no encuentre una fuente suficiente, deberá reconocer que no tiene información suficiente en el corpus. También se realizarán casos de prueba para comprobar que no invente normas, sentencias ni hechos.
+
+### 6.5 Responsabilidad
+
+Como estudiante de Derecho, debo verificar las respuestas de la herramienta antes de presentarlas. La inteligencia artificial puede equivocarse, por lo que no asumiré que una respuesta es correcta solamente porque está bien redactada. El objetivo es que tutelaapp sea una herramienta de orientación académica responsable, no un sustituto del análisis jurídico profesional.
 
 ---
 
-## 🔍 Parte 7 — Análisis crítico (insumo de tu sustentación final)
+## 🔍 Parte 7 — Análisis crítico
 
-Responde con total honestidad — aquí es donde demuestras tu criterio jurídico:
+### 7.1 ¿Dónde falla mi herramienta?
 
-1. **¿Dónde falla tu herramienta?** Describe 2 situaciones donde se equivoca o se queda corta.
-2. **¿Qué datos procesa?** Qué entra, qué se guarda, qué sale.
-3. **¿Por qué no reemplaza al abogado?** Argumenta en 5–8 frases.
+**Situación 1: el caso contiene información que no está en el corpus.**
+
+La herramienta puede recibir una situación relacionada con un medicamento o una barrera de acceso que no esté suficientemente desarrollada en las fuentes incorporadas. En ese caso, podría no tener elementos suficientes para identificar todos los fundamentos jurídicos relevantes. Por eso, deberá reconocer cuando no encuentre información suficiente y no inventar una respuesta.
+
+**Situación 2: el caso requiere un análisis jurídico más amplio.**
+
+La herramienta puede orientar sobre posibles derechos y normas, pero no necesariamente podrá valorar todas las circunstancias de un caso real. Por ejemplo, puede no tener información suficiente sobre los hechos, las pruebas, las actuaciones de la entidad responsable o las condiciones particulares del usuario. Por eso, su respuesta será una orientación inicial y no una decisión sobre la procedencia o el resultado de una tutela.
+
+### 7.2 ¿Qué datos procesa?
+
+| **Elemento** | **Descripción** |
+|---|---|
+| **Qué entra** | Una descripción ficticia de una situación relacionada con una barrera de acceso a medicamentos. |
+| **Qué se guarda** | El corpus jurídico y los archivos necesarios para el funcionamiento del proyecto. |
+| **Qué no se guarda** | Nombres, números de identificación, historias clínicas ni otros datos personales reales de usuarios de prueba. |
+| **Qué sale** | Una orientación jurídica basada en las fuentes incorporadas, con identificación de posibles derechos y normas relevantes. |
+
+### 7.3 ¿Por qué no reemplaza al abogado?
+
+tutelaapp no reemplaza al abogado porque una herramienta de inteligencia artificial no puede asumir por sí sola toda la responsabilidad del análisis jurídico. Su respuesta depende de la información que recibe y de las fuentes que tiene incorporadas. Si el caso contiene hechos incompletos o información que no está en el corpus, puede quedarse corta. Además, no puede garantizar que una tutela sea concedida ni valorar todas las circunstancias particulares de una persona. El abogado debe analizar los hechos, las pruebas, las normas y la jurisprudencia aplicable. También debe verificar que la orientación sea correcta y adecuada al caso concreto. Por eso, tutelaapp será una herramienta de apoyo académico y de comprensión inicial, no un sustituto de la consulta jurídica profesional.
 
 ---
 
-## ✅ Parte 8 — Entregables finales (Definition of Done)
+## ✅ Parte 8 — Entregables finales
 
-Requisitos de entrega del curso — todos deben estar ✅:
+### 8.1 Definition of Done
 
-- [ ] 🔗 **Solución funcionando**: resuelve el problema jurídico y está desplegada con URL pública.
-- [ ] 👤 **Usuario real**: al menos una persona externa al curso la usó, con evidencia (video corto o testimonio). Guarda la evidencia en `docs/evidencia-usuario.md`.
-- [ ] 📦 **Repositorio con historial**: este repo muestra tus avances semanales (commits + bitácora).
-- [ ] 🧠 **Análisis crítico**: Parte 7 completada.
-- [ ] 📋 Partes 1–7 de este README completas y al día.
+| Requisito | Evidencia | Estado |
+|---|---|---|
+| **Solución funcionando** | URL pública de tutelaapp. | ⬜ Pendiente |
+| **Usuario real** | Evidencia de que una persona externa al curso probó la herramienta. | ⬜ Pendiente |
+| **Repositorio con historial** | Commits y bitácora semanal en GitHub. | ⬜ Pendiente |
+| **Análisis crítico** | Parte 7 completada. | 🟡 En desarrollo |
+| **Partes 1–7 completas** | README actualizado. | 🟡 En desarrollo |
+
+### 8.2 Evidencia del usuario real
+
+Cuando la herramienta esté funcionando, una persona externa al curso probará tutelaapp utilizando un caso ficticio. Se guardará evidencia de la prueba, por ejemplo, una captura de pantalla o un testimonio breve, sin incluir datos personales reales.
+
+**Usuario de prueba:** `[Se completará cuando se realice la prueba]`  
+**Fecha de prueba:** `[Se completará]`  
+**Caso utilizado:** `[Descripción del caso ficticio]`  
+**Resultado:** `[Qué respondió la herramienta y qué se observó]`  
+**Evidencia:** `[Enlace o archivo de evidencia]`
+
+### 8.3 Presentación final
+
+La presentación tendrá una duración aproximada de **5 minutos** y explicará:
+
+1. El problema jurídico que busca resolver tutelaapp.
+2. Cómo funciona la herramienta.
+3. Qué fuentes jurídicas utiliza.
+4. Una demostración de un caso ficticio.
+5. Sus límites y por qué no reemplaza al abogado.
+
+### 8.4 Conclusión del proyecto
+
+tutelaapp busca demostrar cómo la inteligencia artificial puede utilizarse como herramienta de apoyo para comprender problemas jurídicos relacionados con el acceso a medicamentos. El proyecto combina conocimientos de Derecho, selección de fuentes, diseño de instrucciones y evaluación crítica de resultados. Su propósito no es reemplazar el trabajo jurídico profesional, sino facilitar una primera orientación académica basada en un corpus jurídico previamente seleccionado.
 
 ---
 
